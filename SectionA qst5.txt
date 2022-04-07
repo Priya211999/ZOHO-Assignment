@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    String str = " adxz";
+	    boolean flag =true;
+	    int dif = str.charAt(0)-str.charAt(1);
+	    for ( int i =0; i<str.length()-1;i++){
+	        int dif2 = str.charAt(i)-str.charAt(i+1);
+	        if ( dif!=dif2){
+	            flag=false;
+	            break;
+	        }
+	    }
+	    if( flag==true){
+	        System.out.println( " equal difference");
+	    }
+	    else {
+	        
+	    }
+		System.out.println(" unequal differences");
+	}
+}
